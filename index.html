@@ -4,142 +4,87 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Varun Mishra | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f7f9fc;
-      color: #1f2937;
-      line-height: 1.6;
-    }
-    header {
-      background: #1e3a8a;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    nav {
-      background: #f0f4f8;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #1e3a8a;
-      font-weight: 600;
-    }
-    section {
-      padding: 2rem 4%;
-    }
-    h1, h2 {
-      color: #1e3a8a;
-    }
-    .about, .portfolio, .contact {
-      max-width: 960px;
-      margin: auto;
-    }
-    .project-card {
-      background: white;
-      padding: 1rem;
-      margin: 1rem 0;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.05);
-    }
-    form {
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.05);
-    }
-    form input, form textarea {
-      width: 100%;
-      margin: 0.5rem 0;
-      padding: 0.8rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    form button {
-      background: #1e3a8a;
-      color: white;
-      padding: 0.8rem 2rem;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    footer {
-      background: #e5e7eb;
-      padding: 1rem;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
 
   <header>
-    <h1>Varun Mishra</h1>
-    <p>Consulting | Data Engineering | MBA @ BITSoM</p>
+    <div class="container">
+      <h1>Varun Mishra</h1>
+      <p>Data Engineer | MBA Candidate at BITSoM | Tech + Strategy Enthusiast</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about" class="about">
+  <section id="about" class="container">
     <h2>About Me</h2>
-    <p>
-      I'm a data-driven professional with 2 years of experience as a Data Engineer at NielsenIQ and a strong background in consulting, product strategy, and software development. Currently pursuing my MBA from BITSoM, I bring analytical rigor and practical insights from internships at Pidilite and project roles with startups and corporates. My interests lie at the intersection of technology, strategy, and impact.
-    </p>
+    <p>I’m currently pursuing my MBA at BITS School of Management (BITSoM), having previously worked for 2 years as a Data Engineer at NielsenIQ. With a Computer Science background and a passion for solving business problems with data, I’ve worked on everything from cloud cost optimization to building analytics platforms and leading market strategy projects for brands like Pidilite and The Renal Project.</p>
   </section>
 
-  <section id="portfolio" class="portfolio">
-    <h2>Portfolio</h2>
-
-    <div class="project-card">
-      <h3>Pidilite Summer Internship Project</h3>
-      <p>Developed a strategy for Fevikwik 463 to drive category creation and share gain in the woodworking segment. Conducted 183+ interviews and executed 4 pilots across cities.</p>
+  <section id="experience" class="container">
+    <h2>Professional Experience</h2>
+    <div class="experience-item">
+      <h3>NielsenIQ – Data Engineer (Jul ‘22 – Jun ‘24)</h3>
+      <ul>
+        <li>Saved ~$50K via cloud cost optimization and boosted insights delivery by 40%.</li>
+        <li>Built sourcing modules for 4 global regions across 5+ projects.</li>
+        <li>Reduced production issues with 80% test automation.</li>
+      </ul>
     </div>
 
-    <div class="project-card">
-      <h3>Cost Optimization @ NielsenIQ</h3>
-      <p>Saved $800K+ annually by refactoring cloud infrastructure and increasing data sourcing efficiency by 40%.</p>
+    <div class="experience-item">
+      <h3>Pidilite Industries – Summer Intern (Apr ‘25 – Jun ‘25)</h3>
+      <ul>
+        <li>Developed strategic GTM for Fevikwik 463 in woodworking category.</li>
+        <li>Interviewed 112 users & 71 dealers across 4 cities; launched 4 pilot projects.</li>
+      </ul>
     </div>
 
-    <div class="project-card">
-      <h3>Case Competitions</h3>
-      <p>Top 10 in EY Techathon 5.0 | Flipkart Wired PPI Holder | 3rd Place – ACM Reverse Coding</p>
-    </div>
-
-    <div class="project-card">
-      <h3>Publications & Certifications</h3>
-      <p>Published papers in Big Data and Cybersecurity. Six Sigma Green Belt Certified. Google Advanced Analytics & Digital Marketing.</p>
+    <div class="experience-item">
+      <h3>The Renal Project – Android Developer (May ‘21 – Jul ‘21)</h3>
+      <ul>
+        <li>Sole developer under CTO; launched MVP app that improved internal comms.</li>
+      </ul>
     </div>
   </section>
 
-  <section id="contact" class="contact">
+  <section id="projects" class="container">
+    <h2>Projects & Publications</h2>
+    <ul>
+      <li><strong>Big Data Paper:</strong> Impact of Big Data on Business Decisions using Data Science.</li>
+      <li><strong>CryptO’ Roulette:</strong> A Smart Approach to Modern Encryption.</li>
+      <li><strong>EY Techathon 5.0:</strong> Semi-finalist (Top 50 of 152,000+).</li>
+      <li><strong>Flipkart WIRED 8.0:</strong> Business Track PPI Opportunity.</li>
+    </ul>
+
+    <h2>Certifications</h2>
+    <ul>
+      <li>📜 Six Sigma Green Belt (Henry Harvin)</li>
+      <li>📊 Advanced Google Analytics</li>
+      <li>🌐 Fundamentals of Digital Marketing (Google)</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="container">
     <h2>Contact Me</h2>
-    <form id="contact-form">
-      <input type="text" id="name" placeholder="Your Name" required/>
-      <input type="email" id="email" placeholder="Your Email" required/>
-      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
+    <p id="formResponse"></p>
   </section>
 
   <footer>
-    &copy; 2025 Varun Mishra. All rights reserved.
+    <p>© 2025 Varun Mishra • Designed with ❤️</p>
   </footer>
-
-  <script>
-    document.getElementById('contact-form').addEventListener('submit', function(e){
-      e.preventDefault();
-      alert("Thank you for your message! I'll get back to you soon.");
-    });
-  </script>
 
 </body>
 </html>
